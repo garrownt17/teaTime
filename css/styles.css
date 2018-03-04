@@ -1,1 +1,195 @@
 /*style for teaTime index.html*/
+
+body	{
+	margin: auto;
+	color: seashell;
+	background-color: black;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	opacity: 0.9;
+	text-align: center;
+}
+
+h2,h3,h4	{
+	display: block;
+}
+/*Header formatting*/
+header	{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 69px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;	
+	border-bottom: 1px solid seashell;
+	margin: 0px;	
+	z-index: 1;
+}
+
+header li	{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px 10px;
+	text-decoration: underline;
+}
+
+header li a	{
+	color: seashell;
+}
+
+.logo	{
+	padding-left: 10px;
+	height: 69px;
+	flex-shrink: 1;
+}
+
+/*main formatting*/
+main	{
+	position: relative;
+		top: 69px;
+	margin: 0px auto;
+}
+
+/*Mission Statement Section*/
+#mission-Statement	{		
+	display: flex;
+		justify-content: center;
+	margin-bottom: 5em;
+}
+
+.missionPic	{
+	background-image: url('../images/img-mission-background.jpg');
+	background-repeat: no-repeat;
+	position: relative;
+	height: 700px;
+	width: 80%;
+	margin: 0px auto;
+	display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	/*Goal: get pic to stay centered when browser is resized*/
+}
+
+.mission	{
+	background-color: black;
+	height: 130px;
+	width: 100%;
+	height: auto;
+}
+
+section.mission	{
+	display: flex;
+	position: relative;
+		top: 96px;
+	justify-content: center;
+	
+}
+
+/*Menu Section*/
+#Tea-of-the-Month	{
+	margin-bottom: 5em;
+
+}
+
+#menu-List	{
+	display: flex;
+		justify-content: center;
+}
+
+.offerings	{
+	display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	width: 70%;
+	height: auto;
+	
+}
+
+.menu	{
+	display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	
+}
+
+.menu-Item img	{
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+}
+
+.menu-Item h4	{
+	margin: 0px;
+}
+
+.menu-Item	{
+	width: 300px;
+	height: 250px;
+	margin: 10px;
+}
+
+/*Locations*/
+.locationPic	{
+	background-image: url('../images/img-locations-background.jpg');
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 80%;
+	margin: 0px auto;
+
+
+}
+
+/*need to center h3 and .location items*/
+.location	{
+	display: inline-block;
+	background-color: black;
+	opacity: 1;
+	width: 300px;
+	padding: 1em 0em;
+}
+
+
+.location h4	{
+	font-size: .8em;
+	opacity: .7
+}
+
+/*Contact*/
+#contact	{
+	height: 200px;
+}
+
+#contact h5	{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
