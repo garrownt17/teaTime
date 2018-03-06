@@ -13,7 +13,7 @@ body	{
 h2,h3,h4	{
 	display: block;
 }
-/*Header formatting*/
+/*Header*/
 header	{
 	display: flex;
 	position: fixed;
@@ -44,10 +44,8 @@ header li a	{
 	flex-shrink: 1;
 }
 
-/*main formatting*/
+/*main*/
 main	{
-	position: relative;
-		top: 69px;
 	margin: 0px auto;
 }
 
@@ -55,16 +53,17 @@ main	{
 #mission-Statement	{		
 	display: flex;
 		justify-content: center;
-	margin-bottom: 5em;
 }
 
 .missionPic	{
 	background-image: url('../images/img-mission-background.jpg');
 	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 0px 0px 25px 25px;
 	position: relative;
 	height: 700px;
-	width: 80%;
-	margin: 0px auto;
+	width: 78%;
+	margin: 70px auto 0px;
 	display: flex;
 		justify-content: center;
 		align-items: center;
@@ -77,6 +76,8 @@ main	{
 	height: 130px;
 	width: 100%;
 	height: auto;
+	border-top: 5px solid seashell;
+	border-bottom: 5px solid seashell;
 }
 
 section.mission	{
@@ -89,8 +90,7 @@ section.mission	{
 
 /*Menu Section*/
 #Tea-of-the-Month	{
-	margin-bottom: 5em;
-
+	padding-top: 69px;
 }
 
 #menu-List	{
@@ -118,6 +118,7 @@ section.mission	{
 	width: 300px;
 	height: 200px;
 	margin: 10px;
+	border-radius: 10px;
 }
 
 .menu-Item h4	{
@@ -130,66 +131,80 @@ section.mission	{
 	margin: 10px;
 }
 
-/*Locations*/
+/*Store Locations*/
+#stores	{
+	padding-top: 42px;
+}
+
 .locationPic	{
 	background-image: url('../images/img-locations-background.jpg');
 	background-repeat: no-repeat;
-	height: 600px;
-	width: 80%;
+	background-position: center center;
+	border-radius: 20px;
+	width: 75%;
 	margin: 0px auto;
-
-
+	display: flex;
+		justify-content: space-around;
+		align-items: center;
+	height: auto;
+	min-height: 600px;
+	flex-shrink: 2;
 }
 
-/*need to center h3 and .location items*/
-.location	{
+.location	{			
 	display: inline-block;
 	background-color: black;
 	opacity: 1;
 	width: 300px;
 	padding: 1em 0em;
+	margin: 1em 30px 0px 0px;
+	border: 5px solid seashell;
+	border-radius: 10px;
+	/*extra goal: get .location items to shrink when browser is resized*/
 }
 
+.location a 	{
+	color: seashell;
+}
+
+.location a:hover	{
+	color:black;
+	background-color: seashell;
+	border-radius: 3px;
+}
+
+.location-Info h3	{
+	Font-size: 1.5em;
+}
 
 .location h4	{
 	font-size: .8em;
-	opacity: .7
+	opacity: .7;
 }
 
 /*Contact*/
 #contact	{
 	height: 200px;
+	padding-top: 69px;
+	width: 60%;
+	margin: 0px auto 100px;
+	border-bottom: 5px dashed #575757;
+}
+
+#contact a	{
+	display: inline-block;
+	color: seashell;
+	padding: 0px;
 }
 
 #contact h5	{
-	
+	margin: 12pt;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Footer*/
+footer	{
+	margin-top: 125px;
+	margin-left: 20px;
+	text-align: left;
+	font-size: .7em;
+	opacity: .3;
+}
